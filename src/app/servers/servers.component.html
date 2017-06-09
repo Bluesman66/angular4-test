@@ -10,6 +10,7 @@
 <!--property binding-->
 <p [innerText]="allowNewServer"></p>
 <!--don't mix string interpolation and property binding!!! -->
-{{ serverCreationStatus }}
+<!--{{ serverCreationStatus }}-->
+<p *ngIf="serverCreated">Server was created!. Name is {{ serverName }}</p>
 <app-server></app-server>
 <app-server></app-server>
